@@ -50,7 +50,11 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/MoveForward",
+      "name": "/actions/default/in/MoveF",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/MoveB",
       "type": "boolean"
     },
     {
@@ -466,7 +470,8 @@
       "/actions/htc_viu/in/viu_axis_3xy": "Axis3 X&Y",
       "/actions/htc_viu/in/viu_axis_4xy": "Axis4 X&Y",
       "/actions/htc_viu/out/viu_vib_01": "Vibration",
-      "/actions/default/in/MoveForward": "Move Forward"
+      "/actions/default/in/MoveF": "Move Forward",
+      "/actions/default/in/MoveB": "Move Backwards"
     }
   ]
 }

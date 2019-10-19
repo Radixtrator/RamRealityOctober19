@@ -105,11 +105,19 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean MoveForward
+        public virtual SteamVR_Action_Boolean MoveF
         {
             get
             {
-                return SteamVR_Actions.default_MoveForward;
+                return SteamVR_Actions.default_MoveF;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean MoveB
+        {
+            get
+            {
+                return SteamVR_Actions.default_MoveB;
             }
         }
         
