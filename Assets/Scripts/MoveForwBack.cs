@@ -9,7 +9,7 @@ public class MoveForwBack : MonoBehaviour
     public SteamVR_Action_Boolean MoveF;
     public SteamVR_Action_Boolean MoveB;
     public Hand hand;
-    public Transform player;
+    public GameObject player;
     public IEnumerator coroutine;
     public float speed;
     // Start is called before the first frame update
@@ -76,7 +76,8 @@ public class MoveForwBack : MonoBehaviour
     private  IEnumerator DoMoveF()
     {
         Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime*speed;
-        player.position += velocity;
+        player.transform.Translate(velocity, Space.World);
+        // player.position += velocity;
         Debug.Log(this.GetComponent<Transform>().forward);
         Debug.Log("Forward");
         yield return null;
