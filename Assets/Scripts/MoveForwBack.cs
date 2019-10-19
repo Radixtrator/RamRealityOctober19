@@ -9,10 +9,12 @@ public class MoveForwBack : MonoBehaviour
     public SteamVR_Action_Boolean MoveF;
     public SteamVR_Action_Boolean MoveB;
     public Hand hand;
-    public Transform player;
+    public GameObject player;
     public IEnumerator coroutine;
     public float speed;
-    // Start is called before the first frame update
+    public SteamVR_Input_Sources handType;
+    public bool isMoving = false;
+
     private void OnEnable()
     {
         if (hand == null)
@@ -33,9 +35,24 @@ public class MoveForwBack : MonoBehaviour
         // MoveF.AddOnChangeListener(OnMoveChange, hand.handType);
         // MoveB.AddOnChangeListener(OnMoveChange, hand.handType);
     }
-    void Update() {
-        if (SteamVR_Input.GetState("default", "MoveF", hand.handType))
+    public void getMoving() {
+        if (MoveF.GetStateDown(hand.handType))
         {
+            isMoving = true;
+        }
+        else if (MoveF.GetStateUp(hand.handType))
+        {
+            isMoving = false;
+        }
+        else {
+            
+        }
+    }
+    void Update() {
+        getMoving();
+        if (isMoving)
+        {
+            
             Move(true);
         }
         //else {
@@ -76,14 +93,15 @@ public class MoveForwBack : MonoBehaviour
     private  IEnumerator DoMoveF()
     {
         Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime*speed;
-        player.position += velocity;
-        Debug.Log(this.GetComponent<Transform>().forward);
-        Debug.Log("Forward");
-        yield return null;
+        player.transform.Translate(velocity, Space.World);
+        // player.position += velocity;
+        yield return new WaitForSeconds(0.0f);
     }
     private IEnumerator DoMoveB()
     {
-        Debug.Log("Backward");
-        yield return null;
+        Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime * -speed;
+        player.transform.Translate(velocity, Space.World);
+        // player.position += velocity;
+        yield return new WaitForSeconds(0.0f);
     }
 }
