@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: 0898782930056ca47995770d3891d26c
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      74: 2534245792732876083
+    second: CowBoyArmature|0Idle
+  - first:
+      74: -4829920352675737995
+    second: CowBoyArmature|10Lift
+  - first:
+      74: -2400356645150628218
+    second: CowBoyArmature|11Point
+  - first:
+      74: 2691741955477159040
+    second: CowBoyArmature|12Dance
+  - first:
+      74: 2759866491322736523
+    second: CowBoyArmature|12Dodge
+  - first:
+      74: 522386908229281999
+    second: CowBoyArmature|12FrontDodge
+  - first:
+      74: -5938383105836652308
+    second: CowBoyArmature|12Jump
+  - first:
+      74: 9159899729585223777
+    second: CowBoyArmature|12RussianDance
+  - first:
+      74: 2015248451184238424
+    second: CowBoyArmature|12Shoot
+  - first:
+      74: 3950503260021202429
+    second: CowBoyArmature|12Shoot2
+  - first:
+      74: -3973306334830847543
+    second: CowBoyArmature|12Standard
+  - first:
+      74: 8947674112582424919
+    second: CowBoyArmature|1Pose
+  - first:
+      74: 7670394453715385481
+    second: CowBoyArmature|2Lift
+  - first:
+      74: 772434864224440143
+    second: CowBoyArmature|3Step
+  - first:
+      74: -7371468887337334504
+    second: CowBoyArmature|4Head
+  - first:
+      74: -2580135444369110295
+    second: CowBoyArmature|5Elbow
+  - first:
+      74: -3103070578884455161
+    second: CowBoyArmature|6Step
+  - first:
+      74: 3558334366166620079
+    second: CowBoyArmature|7Grab
+  - first:
+      74: -5666711938306325239
+    second: CowBoyArmature|8Draw
+  - first:
+      74: 8540754890709064867
+    second: CowBoyArmature|9Dodge
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
