@@ -28,6 +28,25 @@ public class Light_Controller : MonoBehaviour
 
 
     }
+
+    public void turnGreen()
+    {
+        Material[] mats = lights.materials;
+            mats[0] = green;
+            mats[2] = grey;
+            mats[3] = grey;
+            lights.materials = mats;
+    }
+
+    public void turnRed()
+    {
+        Material[] mats = lights.materials;
+            mats[0] = grey;
+            mats[2] = grey;
+            mats[3] = red;
+            lights.materials = mats;
+    }
+    
     public void ChangeColor()
     {
         //Changes color of active stoplight
