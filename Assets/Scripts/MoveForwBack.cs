@@ -12,7 +12,9 @@ public class MoveForwBack : MonoBehaviour
     public GameObject player;
     public IEnumerator coroutine;
     public float speed;
-    // Start is called before the first frame update
+    public SteamVR_Input_Sources handType;
+    public bool isMoving = false;
+
     private void OnEnable()
     {
         if (hand == null)
@@ -33,9 +35,24 @@ public class MoveForwBack : MonoBehaviour
         // MoveF.AddOnChangeListener(OnMoveChange, hand.handType);
         // MoveB.AddOnChangeListener(OnMoveChange, hand.handType);
     }
-    void Update() {
-        if (SteamVR_Input.GetState("default", "MoveF", hand.handType))
+    public void getMoving() {
+        if (MoveF.GetStateDown(hand.handType))
         {
+            isMoving = true;
+        }
+        else if (MoveF.GetStateUp(hand.handType))
+        {
+            isMoving = false;
+        }
+        else {
+            
+        }
+    }
+    void Update() {
+        getMoving();
+        if (isMoving)
+        {
+            Debug.Log("Is Moving");
             Move(true);
         }
         //else {
@@ -80,7 +97,8 @@ public class MoveForwBack : MonoBehaviour
         // player.position += velocity;
         Debug.Log(this.GetComponent<Transform>().forward);
         Debug.Log("Forward");
-        yield return null;
+        yield return new WaitForSeconds(0.0f);
+        //yield return null;
     }
     private IEnumerator DoMoveB()
     {
