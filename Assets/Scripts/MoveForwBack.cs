@@ -75,7 +75,8 @@ public class MoveForwBack : MonoBehaviour
     }
     private  IEnumerator DoMoveF()
     {
-        player.C
+        Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.DeltaTime*speed;
+        player.position += 
         Debug.Log(this.GetComponent<Transform>().forward);
         Debug.Log("Forward");
         yield return null;
