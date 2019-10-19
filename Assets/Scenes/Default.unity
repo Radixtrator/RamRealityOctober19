@@ -479,6 +479,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &1254490053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 447954, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2129297830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1672985849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -561,6 +567,8 @@ MonoBehaviour:
     actionPath: /actions/default/in/MoveB
     needsReinit: 0
   hand: {fileID: 0}
+  player: {fileID: 1254490053}
+  speed: 2
 --- !u!1001 &2129297830
 PrefabInstance:
   m_ObjectHideFlags: 0
