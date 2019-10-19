@@ -52,7 +52,7 @@ public class MoveForwBack : MonoBehaviour
         getMoving();
         if (isMoving)
         {
-            Debug.Log("Is Moving");
+            
             Move(true);
         }
         //else {
@@ -95,14 +95,13 @@ public class MoveForwBack : MonoBehaviour
         Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime*speed;
         player.transform.Translate(velocity, Space.World);
         // player.position += velocity;
-        Debug.Log(this.GetComponent<Transform>().forward);
-        Debug.Log("Forward");
         yield return new WaitForSeconds(0.0f);
-        //yield return null;
     }
     private IEnumerator DoMoveB()
     {
-        Debug.Log("Backward");
-        yield return null;
+        Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime * -speed;
+        player.transform.Translate(velocity, Space.World);
+        // player.position += velocity;
+        yield return new WaitForSeconds(0.0f);
     }
 }
