@@ -4,32 +4,20 @@ using UnityEngine;
 
 public class StoreAudio : MonoBehaviour
 {
-    public bool WheelChair;
-    public GameObject Apple;
-    public GameObject Banana;
-    public GameObject Orange;
     public AudioClip BananaClip;
     public AudioClip OrangeClip;
     public AudioClip AppleClip;
     public AudioClip GreatingClip;
     public AudioSource Robot;
-    void Start()
-    {
-        if(!WheelChair)
-        {
-            Debug.Log("here");
-            Robot.clip = GreatingClip;
-            Robot.Play();
-        }
-    }
 
     // Update is called once per frame
     void Update()
     {
-        if (WheelChair && Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space"))
         {
             Robot.clip = GreatingClip;
             Robot.Play();
+            Debug.Log("Here");
         }
     }
     public void PlayApple()

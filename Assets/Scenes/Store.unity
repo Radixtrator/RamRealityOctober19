@@ -311,13 +311,18 @@ PrefabInstance:
     - target: {fileID: 2227257621521319152, guid: a915bf9bba9b579418e8415e29cb618c,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.125
       objectReference: {fileID: 0}
     - target: {fileID: 2227257621521319152, guid: a915bf9bba9b579418e8415e29cb618c,
         type: 3}
       propertyPath: m_PlayOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2227257621521319152, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cd55dd7bb6c1fd749b36c39a11d79055, type: 3}
     - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
         type: 3}
       propertyPath: Robot
