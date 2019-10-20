@@ -8,6 +8,8 @@ TagManager:
   - FxTemporaire
   - ramp
   - store
+  - homeDoor
+  - streetDoor
   layers:
   - Default
   - TransparentFX

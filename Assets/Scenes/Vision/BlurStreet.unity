@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11265291, g: 0.2815335, b: 0.7091814, a: 1}
+  m_IndirectSpecularColor: {r: 0.11268882, g: 0.28156924, b: 0.7091791, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16868,11 +16868,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Door '
       objectReference: {fileID: 0}
-    - target: {fileID: -7688039733745915840, guid: 25faf9d541174a04993fda7505066b62,
+    - target: {fileID: -927199367670048503, guid: 25faf9d541174a04993fda7505066b62,
         type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 8d52eb5caf8792a44a55ae23fd84b0e3, type: 2}
+      propertyPath: m_TagString
+      value: streetDoor
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 25faf9d541174a04993fda7505066b62,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16943,8 +16943,47 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.015
       objectReference: {fileID: 0}
+    - target: {fileID: -7688039733745915840, guid: 25faf9d541174a04993fda7505066b62,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d52eb5caf8792a44a55ae23fd84b0e3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25faf9d541174a04993fda7505066b62, type: 3}
+--- !u!1 &1608973584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 25faf9d541174a04993fda7505066b62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1608973583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1608973585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608973584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf50890c95f7f14397ba7545b6440da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 1608973586}
+  sceneName: BlurStore
+  tag: streetDoor
+--- !u!65 &1608973586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608973584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1621183512
 GameObject:
   m_ObjectHideFlags: 0

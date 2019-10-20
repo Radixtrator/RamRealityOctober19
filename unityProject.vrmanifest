@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.nuihackathon.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\CSUVR\\Desktop\\RamRealityOctober19\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\XR 2019- HP\\Documents\\RamRealityOctober19\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "NuiHackathon [Testing]"
