@@ -83,6 +83,18 @@ public class MoveChair : MonoBehaviour
       
         
     } */
+    void OnCollisionEnter(Collision collision)
+    {
+        foreach (ContactPoint contact in collision.contacts)
+        {
+            Debug.DrawRay(contact.point, contact.normal, Color.white);
+        }
+        if (collision.gameObject.tag == "ramp") {
+            Debug.Log("Hit Ramp");
+        }
+    }
+}
+
     public void Move(bool forward)
     {
         if (forward == true)
@@ -106,4 +118,4 @@ public class MoveChair : MonoBehaviour
         // player.position += velocity;
         yield return new WaitForSeconds(0.0f);
     }
-}
+}}
