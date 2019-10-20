@@ -1419,6 +1419,11 @@ PrefabInstance:
       propertyPath: m_TagString
       value: ramp
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010547881750, guid: dc06161b6d97feb419f45f03b62e14b9,
+        type: 3}
+      propertyPath: chair
+      value: 
+      objectReference: {fileID: 176978423}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
 --- !u!1 &2129297831 stripped
