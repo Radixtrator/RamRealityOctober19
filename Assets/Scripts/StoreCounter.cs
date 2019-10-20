@@ -22,7 +22,9 @@ public class StoreCounter : MonoBehaviour
         if (collision.gameObject.tag == "store")
         {
             items++;
+            Destroy(collision.gameObject);
+            Debug.Log(collision);
         }
-        Debug.Log(collision);
+      
     }
 }
