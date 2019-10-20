@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Light_Controller : MonoBehaviour
 {
@@ -11,24 +12,33 @@ public class Light_Controller : MonoBehaviour
     public Material green;
     public Material grey;
 
-    public GameObject player_obj;
-    private Transform player;
+    // public GameObject player_obj;
+    // private Transform player;
     private Transform t;
 
-    private bool first_flag = true;
+    public GameObject textBoard;
+    private Renderer board_rend;
 
-    private int count;
+    private bool first_flag = true;
+    private int timeLeft = 10;
+
+    private Text countdown;
 
     private void Awake()
     {
         t = this.transform;
         // player = GameObject.FindGameObjectWithTag("MainCamera").transform;
-        player = player_obj.transform;
-        if (player)
-        {
-            Debug.Log("aaaaaaaaaaaaaaaaaaa");
-            Debug.Log(player.position);
-        }
+        // player = player_obj.transform;
+        // if (player)
+        // {
+        //    Debug.Log("aaaaaaaaaaaaaaaaaaa");
+        //    Debug.Log(player.position);
+        //}
+        //counter = 0;
+        board_rend = textBoard.GetComponent<Renderer>();
+        board_rend.enabled = true;
+        countdown = textBoard.GetComponent<Text>();
+        Time.timeScale = 1;
     }
 
     void Start()
@@ -36,13 +46,14 @@ public class Light_Controller : MonoBehaviour
         //lightNumber = 1;
         turnRed();
         //StartCoroutine(LightSwitch());
+        StartCoroutine(StartCountdown());
+
     }
 
     // Update is called once per frame
     void Update()
     {
         // Debug.Log(player.position);
-        // count += 1;
         // if (player.position.x < -2.5 && player.position.z < 4 && player.position.z > -3 && first_flag)
         // {w
 
@@ -56,6 +67,8 @@ public class Light_Controller : MonoBehaviour
             turnGreen();
             StartCoroutine(LightSwitch());
         }
+
+        countdown.text = timeLeft.ToString();
 
     }
 
@@ -71,6 +84,28 @@ public class Light_Controller : MonoBehaviour
             turnGreen();
         }
     }
+    IEnumerator LoseTime()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(1);
+            timeLeft--;
+        }
+    }
+
+    IEnumerator StartCountdown(int countdownValue = 10)
+    {
+        int currCountdownValue = timeLeft;
+        currCountdownValue = countdownValue;
+        while (currCountdownValue > 0)
+        {
+            Debug.Log("Countdown: " + currCountdownValue);
+            yield return new WaitForSeconds(1);
+            currCountdownValue--;
+            timeLeft = currCountdownValue;
+
+        }
+    }
 
     public void turnGreen()
     {
@@ -79,6 +114,8 @@ public class Light_Controller : MonoBehaviour
         mats[2] = grey;
         mats[3] = grey;
         lights.materials = mats;
+        board_rend.sharedMaterial = green;
+        //textBoard.GetComponent<Text>();
     }
 
     public void turnRed()
@@ -88,6 +125,7 @@ public class Light_Controller : MonoBehaviour
         mats[2] = grey;
         mats[3] = red;
         lights.materials = mats;
+        board_rend.sharedMaterial = red;
     }
 
     public void turnYellow()
@@ -97,6 +135,7 @@ public class Light_Controller : MonoBehaviour
         mats[2] = yellow;
         mats[3] = grey;
         lights.materials = mats;
+        board_rend.sharedMaterial = yellow;
     }
     
 }
