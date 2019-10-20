@@ -177,6 +177,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+--- !u!1 &495086765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8417467459636233169, guid: e897fbb04f3590d4c921087f1c0e8841,
+    type: 3}
+  m_PrefabInstance: {fileID: 1006209540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &495086774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495086765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce5575df1b0f9e4799ece0a69840fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  call: {fileID: 8300000, guid: 08381e47eaf5e2c41a7fae59bc26dd78, type: 3}
+  phoneRinger: {fileID: 523304927}
+  ring: {fileID: 8300000, guid: e1e30d668cb7b3b4284ee51cc55f223f, type: 3}
+  heard: 0
+  past: {x: 0, y: 0, z: 0}
+--- !u!82 &523304927 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6437722082081651585, guid: e897fbb04f3590d4c921087f1c0e8841,
+    type: 3}
+  m_PrefabInstance: {fileID: 1006209540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1006209540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -244,12 +273,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6437722082081651585, guid: e897fbb04f3590d4c921087f1c0e8841,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6437722082081651584, guid: e897fbb04f3590d4c921087f1c0e8841,
         type: 3}
       propertyPath: call
       value: 
-      objectReference: {fileID: 8300000, guid: f52e27d279af6bc409b5211b3cb87e7f, type: 3}
-    m_RemovedComponents: []
+      objectReference: {fileID: 8300000, guid: 08381e47eaf5e2c41a7fae59bc26dd78, type: 3}
+    m_RemovedComponents:
+    - {fileID: 6437722082081651584, guid: e897fbb04f3590d4c921087f1c0e8841, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e897fbb04f3590d4c921087f1c0e8841, type: 3}
 --- !u!1 &1006209541 stripped
 GameObject:
@@ -487,6 +522,11 @@ PrefabInstance:
     - target: {fileID: 708243466014476540, guid: 58eda3d012db53e4ab0a103ff718c773,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516896397968737393, guid: 58eda3d012db53e4ab0a103ff718c773,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7281553097493489634, guid: 58eda3d012db53e4ab0a103ff718c773,
