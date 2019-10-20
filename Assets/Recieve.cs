@@ -12,6 +12,7 @@ public class Recieve : MonoBehaviour
             Debug.Log(gameObject.GetComponents(typeof(Component))[i]);
             if(i == 6)
             {
+                Debug.Log(gameObject.GetComponents(typeof(Component))[i]);
                 Destroy(gameObject.GetComponents(typeof(Component))[i]);
             }
         }
