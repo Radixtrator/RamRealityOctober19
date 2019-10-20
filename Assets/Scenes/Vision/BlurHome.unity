@@ -581,7 +581,8 @@ PrefabInstance:
       propertyPath: m_TagString
       value: homeDoor
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8516896397968737404, guid: 58eda3d012db53e4ab0a103ff718c773, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 58eda3d012db53e4ab0a103ff718c773, type: 3}
 --- !u!1001 &8434589926401183423
 PrefabInstance:
