@@ -22,7 +22,7 @@ public class Light_Controller : MonoBehaviour
     private bool first_flag = true;
     private int timeLeft = 10;
 
-    private Text countdown;
+    public TextMesh countdown;
 
     private void Awake()
     {
@@ -37,7 +37,7 @@ public class Light_Controller : MonoBehaviour
         //counter = 0;
         board_rend = textBoard.GetComponent<Renderer>();
         board_rend.enabled = true;
-        countdown = textBoard.GetComponent<Text>();
+       // countdown = textBoard.GetComponent<TextMesh>();
         Time.timeScale = 1;
     }
 
