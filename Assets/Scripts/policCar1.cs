@@ -14,6 +14,9 @@ public class policCar1 : MonoBehaviour
 
     public GameObject sound;
 
+    public AudioSource horn;
+    public AudioClip hornClip;
+
     bool first_done = false;
     bool second_done = false;
 
@@ -41,11 +44,14 @@ public class policCar1 : MonoBehaviour
           sound.SetActive(true);
           first_done = true;
           co = StartCoroutine(Siren());
+            horn.clip = hornClip;
+            horn.Play();
         }
         if(Input.GetKeyDown(KeyCode.V) && first_done && !second_done && !all_done){
           pc2.SetActive(true);
           pc1.SetActive(false);
           second_done = true;
+
         }
 
         if(first_done && !second_done && !all_done){
@@ -55,7 +61,7 @@ public class policCar1 : MonoBehaviour
           redLight.transform.position = new Vector3(pc1.transform.position.x - (float)0.3, pc1.transform.position.y + (float)1.58, pc1.transform.position.z - (float)0.3);
           blueLight.transform.position = new Vector3(pc1.transform.position.x + (float)0.3, pc1.transform.position.y + (float)1.58, pc1.transform.position.z - (float)0.3);
           sound.transform.position = new Vector3(pc1.transform.position.x + (float)0.3, pc1.transform.position.y + (float)1.58, pc1.transform.position.z - (float)0.3);
-
+            
         }
 
         if(second_done && !all_done){
@@ -66,7 +72,7 @@ public class policCar1 : MonoBehaviour
           if(pc2.transform.position.x >= 44 && !all_done){
             StopCoroutine(co);
             StartCoroutine(Siren2());
-            sound.SetActive(false);
+            sound.SetActive(true);
           }
         }
 
@@ -75,6 +81,7 @@ public class policCar1 : MonoBehaviour
           redLight.SetActive(false);
           blueLight.SetActive(false);
           pc2.SetActive(false);
+            pc1.SetActive(false);
         }
 
 
