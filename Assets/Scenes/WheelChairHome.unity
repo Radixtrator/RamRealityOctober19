@@ -205,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 28668687}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65ede58ba06b69c4e99f72cc5e97bbb3, type: 3}
+  m_Script: {fileID: 11500000, guid: f4d39b4d980320c479bac8d8f9fc3be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   MoveF:
@@ -217,7 +217,7 @@ MonoBehaviour:
   hand: {fileID: 0}
   player: {fileID: 1296979952}
   chair: {fileID: 678532594}
-  speed: 2.5
+  speed: 1
   handType: 0
   isMoving: 0
 --- !u!1 &105579697
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   desiredHeadPosition: {fileID: 105579698}
-  steamCamera: {fileID: 1229358674}
+  steamCamera: {fileID: 1198445114}
   steamController: {fileID: 670341115}
 --- !u!114 &678532599
 MonoBehaviour:
@@ -389,7 +389,6 @@ MonoBehaviour:
     needsReinit: 0
   hand: {fileID: 0}
   player: {fileID: 1296979952}
-  chair: {fileID: 0}
   speed: 2.5
   handType: 0
   isMoving: 0
@@ -399,51 +398,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 13165584}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1229358673
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1229358674}
-  - component: {fileID: 1229358675}
-  m_Layer: 0
-  m_Name: VRCamera (head)
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1229358674
+--- !u!4 &1198445114 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 429506, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 13165584}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229358673}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 670341115}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1229358675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229358673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  index: 0
-  origin: {fileID: 0}
 --- !u!1001 &1294440210
 PrefabInstance:
   m_ObjectHideFlags: 0
