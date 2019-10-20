@@ -10,6 +10,7 @@ TagManager:
   - store
   - homeDoor
   - streetDoor
+  - storeDoor
   layers:
   - Default
   - TransparentFX

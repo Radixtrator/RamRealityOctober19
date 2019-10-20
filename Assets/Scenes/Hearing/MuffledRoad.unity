@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11265291, g: 0.2815335, b: 0.7091814, a: 1}
+  m_IndirectSpecularColor: {r: 0.11268882, g: 0.28156924, b: 0.7091791, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -234,6 +234,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: SUV
       objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.092396
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000024005
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1059
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1059
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1059
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5248d2d392f05674a962d215eb84a1d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -303,31 +328,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2712959
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.092396
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000024005
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1059
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1059
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5248d2d392f05674a962d215eb84a1d7, type: 3}
@@ -4833,6 +4833,7 @@ MonoBehaviour:
   green: {fileID: 750593386459191921, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   grey: {fileID: -5243988174349660497, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   timeGreen: 0
+  total: {fileID: 2001468264}
   textBoard: {fileID: 2074029324}
   countdown: {fileID: 2100251660}
 --- !u!114 &472229139
@@ -5545,6 +5546,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: SUV (1)
       objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.092396
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.000024005
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1059
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1059
+      objectReference: {fileID: 0}
+    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1059
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5248d2d392f05674a962d215eb84a1d7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5614,31 +5640,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1.2712959
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.092396
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.000024005
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.1059
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.1059
-      objectReference: {fileID: 0}
-    - target: {fileID: -6208384264962291471, guid: 5248d2d392f05674a962d215eb84a1d7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.1059
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5248d2d392f05674a962d215eb84a1d7, type: 3}
@@ -11518,6 +11519,7 @@ MonoBehaviour:
   green: {fileID: 750593386459191921, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   grey: {fileID: -5243988174349660497, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   timeGreen: 0
+  total: {fileID: 0}
   textBoard: {fileID: 2074029324}
   countdown: {fileID: 0}
 --- !u!1001 &1133289111
@@ -11838,9 +11840,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 108637295, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+      propertyPath: speed
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 121078, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
       propertyPath: m_TagString
-      value: GameController
+      value: streetDoor
       objectReference: {fileID: 0}
     - target: {fileID: 114000010547881750, guid: dc06161b6d97feb419f45f03b62e14b9,
         type: 3}
@@ -11849,41 +11855,6 @@ PrefabInstance:
       objectReference: {fileID: 305718894}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
---- !u!1 &1157814687 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1157814686}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1157814688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 160596, guid: dc06161b6d97feb419f45f03b62e14b9,
-    type: 3}
-  m_PrefabInstance: {fileID: 1157814686}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1157814689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157814688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65ede58ba06b69c4e99f72cc5e97bbb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MoveF:
-    actionPath: /actions/default/in/MoveF
-    needsReinit: 0
-  MoveB:
-    actionPath: /actions/default/in/MoveB
-    needsReinit: 0
-  hand: {fileID: 0}
-  player: {fileID: 1157814687}
-  speed: 2.5
-  handType: 0
-  isMoving: 0
 --- !u!1 &1179346454
 GameObject:
   m_ObjectHideFlags: 0
@@ -17132,6 +17103,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25faf9d541174a04993fda7505066b62, type: 3}
+--- !u!1 &1608973584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2797809972704814648, guid: 25faf9d541174a04993fda7505066b62,
+    type: 3}
+  m_PrefabInstance: {fileID: 1608973583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1608973585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608973584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 162.49997, y: 325.00003, z: 98.393684}
+  m_Center: {x: 0, y: 159.99998, z: 17.446814}
+--- !u!114 &1608973586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608973584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf50890c95f7f14397ba7545b6440da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 1608973585}
+  sceneName: HearingStore
+  tag: streetDoor
 --- !u!1 &1621183512
 GameObject:
   m_ObjectHideFlags: 0

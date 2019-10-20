@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17757863, g: 0.222322, b: 0.3045174, a: 1}
+  m_IndirectSpecularColor: {r: 0.17757899, g: 0.22232248, b: 0.3045191, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -245,11 +245,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
-    - target: {fileID: 6437722082081651585, guid: e897fbb04f3590d4c921087f1c0e8841,
-        type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6437722083302421818, guid: e897fbb04f3590d4c921087f1c0e8841,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -305,11 +300,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6437722082081651584, guid: e897fbb04f3590d4c921087f1c0e8841,
-        type: 3}
-      propertyPath: call
-      value: 
-      objectReference: {fileID: 8300000, guid: 08381e47eaf5e2c41a7fae59bc26dd78, type: 3}
     - target: {fileID: 34705565575514056, guid: e897fbb04f3590d4c921087f1c0e8841,
         type: 3}
       propertyPath: m_TagString
@@ -320,6 +310,16 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6437722082081651585, guid: e897fbb04f3590d4c921087f1c0e8841,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437722082081651584, guid: e897fbb04f3590d4c921087f1c0e8841,
+        type: 3}
+      propertyPath: call
+      value: 
+      objectReference: {fileID: 8300000, guid: 08381e47eaf5e2c41a7fae59bc26dd78, type: 3}
     m_RemovedComponents:
     - {fileID: 6437722082081651584, guid: e897fbb04f3590d4c921087f1c0e8841, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e897fbb04f3590d4c921087f1c0e8841, type: 3}
@@ -571,6 +571,11 @@ PrefabInstance:
       propertyPath: chair
       value: 
       objectReference: {fileID: 1006209541}
+    - target: {fileID: 6835410382466733058, guid: 58eda3d012db53e4ab0a103ff718c773,
+        type: 3}
+      propertyPath: m_TagString
+      value: homeDoor
+      objectReference: {fileID: 0}
     - target: {fileID: 7863889166290383634, guid: 58eda3d012db53e4ab0a103ff718c773,
         type: 3}
       propertyPath: m_TagString
@@ -589,6 +594,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Glasses
+      objectReference: {fileID: 0}
+    - target: {fileID: 8434718017022942271, guid: e6344e6c2b1035847933bf82e13ec4e4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8431753508949364565, guid: e6344e6c2b1035847933bf82e13ec4e4,
         type: 3}

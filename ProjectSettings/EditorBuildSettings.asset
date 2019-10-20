@@ -4,5 +4,32 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Vision/BlurStreet.unity
+    guid: 8bcfa5e3ebfa8694a9f9896458952cc1
+  - enabled: 1
+    path: Assets/Scenes/Vision/BlurHome.unity
+    guid: 04484f73420e92d4da84f54435e56975
+  - enabled: 1
+    path: Assets/Scenes/Vision/BlurStore.unity
+    guid: 1d15148faab61ef40b17a0a90c05f3be
+  - enabled: 1
+    path: Assets/Scenes/Vision/SpotStore.unity
+    guid: c8e87fbbb1d821c4080fb54af8b4af41
+  - enabled: 1
+    path: Assets/Scenes/WheelChair/RoadWheelChair.unity
+    guid: 1db6880764504824d9fbcaa24e33fcd7
+  - enabled: 1
+    path: Assets/Scenes/WheelChair/StoreWheelChair.unity
+    guid: 341e191045e905f4fa8e97835d33798c
+  - enabled: 1
+    path: Assets/Scenes/Hearing/HearingHome.unity
+    guid: 8fe69434d64d64749a3ef0da87b9ad1b
+  - enabled: 1
+    path: Assets/Scenes/Hearing/MuffledRoad.unity
+    guid: 06e4acd988ea0ea4eae788fcfd2eab95
+  - enabled: 1
+    path: Assets/Scenes/Hearing/HearingStore.unity
+    guid: d4e433f7c477612489afab7a308f7215
   m_configObjects: {}

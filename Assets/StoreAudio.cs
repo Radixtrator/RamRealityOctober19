@@ -23,37 +23,60 @@ public class StoreAudio : MonoBehaviour
     }
     public void PlayApple()
     {
-        if (counter != 2)
+        if (counter <= 2)
         {
             Robot.clip = AppleClip;
             Robot.Play();
             counter++;
         }
-    }
-
-    public void PlayFinished()
-    { if (counter != 2)
+        else
         {
             Robot.clip = finished;
             Robot.Play();
             counter++;
         }
     }
+
+    public void PlayFinished()
+    { if (counter == 2)
+        {
+            Robot.clip = finished;
+            Robot.Play();
+            counter++;
+        }
+        else
+        {
+            Robot.clip = finished;
+            Robot.Play();
+        }
+    }
     public void PlayOrange()
     {
-        if (counter != 2)
+        if (counter <= 2)
         {
             Robot.clip = OrangeClip;
+            Robot.Play();
+            counter++;
+        }
+        else
+        {
+            Robot.clip = finished;
             Robot.Play();
         }
     }
     public void PlayBanana()
     {
-        if (counter != 2)
+        if (counter <= 2)
         {
             counter++;
             Robot.clip = BananaClip;
             Robot.Play();
         }
+        else
+        {
+            Robot.clip = finished;
+            Robot.Play();
+        }
+
     }
 }
