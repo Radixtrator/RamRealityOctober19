@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCollide : MonoBehaviour
+public class PlayerCollideExit : MonoBehaviour
     
 {
-    public GameObject player;
+    public GameObject hand;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class PlayerCollide : MonoBehaviour
     {
         if (collision.gameObject.tag == "ramp")
         {
-            player.GetComponent<MoveChair>().onRamp = true;
+            hand.GetComponent<MoveChair>().onRamp = false;
             Debug.Log("Hit Ramp" + collision);
         }
         Debug.Log(collision);
