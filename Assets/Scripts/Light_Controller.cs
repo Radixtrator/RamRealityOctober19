@@ -24,6 +24,7 @@ public class Light_Controller : MonoBehaviour
     private int timeLeft = 10;
 
     public TextMesh countdown;
+    private Coroutine co;
 
     private void Awake()
     {
@@ -45,9 +46,15 @@ public class Light_Controller : MonoBehaviour
     void Start()
     {
         //lightNumber = 1;
-        turnRed();
+        //turnRed();
+        Material[] mats = lights.materials;
+        mats[0] = grey;
+        mats[2] = grey;
+        mats[3] = red;
+        lights.materials = mats;
+        board_rend.sharedMaterial = red;
         //StartCoroutine(LightSwitch());
-        StartCoroutine(StartCountdown());
+        //StartCoroutine(StartCountdown());
 
     }
 
@@ -77,7 +84,7 @@ public class Light_Controller : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(timeGreen);
+            yield return new WaitForSeconds(6);
             turnYellow();
             yield return new WaitForSeconds(2);
             turnRed();
@@ -94,7 +101,7 @@ public class Light_Controller : MonoBehaviour
         }
     }
 
-    IEnumerator StartCountdown(int countdownValue = 10)
+    IEnumerator StartCountdown(int countdownValue)
     {
         int currCountdownValue = timeLeft;
         currCountdownValue = countdownValue;
@@ -117,6 +124,8 @@ public class Light_Controller : MonoBehaviour
         lights.materials = mats;
         board_rend.sharedMaterial = green;
         //textBoard.GetComponent<Text>();
+        StopCoroutine(co);
+        co = StartCoroutine(StartCountdown(6));
     }
 
     public void turnRed()
@@ -127,6 +136,8 @@ public class Light_Controller : MonoBehaviour
         mats[3] = red;
         lights.materials = mats;
         board_rend.sharedMaterial = red;
+        StopCoroutine(co);
+        co = StartCoroutine(StartCountdown(15));
     }
 
     public void turnYellow()
@@ -137,6 +148,8 @@ public class Light_Controller : MonoBehaviour
         mats[3] = grey;
         lights.materials = mats;
         board_rend.sharedMaterial = yellow;
+        StopCoroutine(co);
+        co = StartCoroutine(StartCountdown(2));
     }
     
 }
