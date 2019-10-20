@@ -4839,6 +4839,7 @@ MonoBehaviour:
   green: {fileID: 750593386459191921, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   grey: {fileID: -5243988174349660497, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   timeGreen: 7
+  total: {fileID: 2001468264}
   textBoard: {fileID: 2074029324}
   countdown: {fileID: 2100251660}
 --- !u!1 &494987736
@@ -11480,6 +11481,7 @@ MonoBehaviour:
   green: {fileID: 750593386459191921, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   grey: {fileID: -5243988174349660497, guid: 4693c5cb9a6718c4a900c47fbf99a096, type: 3}
   timeGreen: 0
+  total: {fileID: 0}
   textBoard: {fileID: 2074029324}
   countdown: {fileID: 0}
 --- !u!1001 &1133289111

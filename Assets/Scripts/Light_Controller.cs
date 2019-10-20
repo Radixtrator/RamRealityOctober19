@@ -12,6 +12,7 @@ public class Light_Controller : MonoBehaviour
     public Material green;
     public Material grey;
     public int timeGreen;
+    public GameObject total;
 
     // public GameObject player_obj;
     // private Transform player;
@@ -25,6 +26,8 @@ public class Light_Controller : MonoBehaviour
 
     public TextMesh countdown;
     private Coroutine co;
+    private float StartTime;
+    bool counting = false;
 
     private void Awake()
     {
@@ -72,11 +75,22 @@ public class Light_Controller : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.G))
         {
+            StartTime = Time.time;
             turnGreen();
             StartCoroutine(LightSwitch());
+            counting = true;
         }
-
-        countdown.text = timeLeft.ToString();
+        if (counting)
+        {
+            int val = ((int)(6.0f - (Time.time - StartTime)));
+            countdown.text = val.ToString();
+            if(val == 0)
+            {
+                counting = false;
+            }
+        }
+    
+ 
 
     }
 
@@ -103,7 +117,7 @@ public class Light_Controller : MonoBehaviour
 
     IEnumerator StartCountdown(int countdownValue)
     {
-        int currCountdownValue = timeLeft;
+        int currCountdownValue;
         currCountdownValue = countdownValue;
         while (currCountdownValue > 0)
         {
@@ -117,39 +131,46 @@ public class Light_Controller : MonoBehaviour
 
     public void turnGreen()
     {
+        total.SetActive(true) ;
         Material[] mats = lights.materials;
         mats[0] = green;
         mats[2] = grey;
         mats[3] = grey;
         lights.materials = mats;
         board_rend.sharedMaterial = green;
+        StartTime = Time.time;
+        counting = true;
+
         //textBoard.GetComponent<Text>();
-        StopCoroutine(co);
-        co = StartCoroutine(StartCountdown(6));
+        //StopCoroutine(co);
+        //co = StartCoroutine(StartCountdown(6));
     }
 
     public void turnRed()
     {
+        total.SetActive(false);
         Material[] mats = lights.materials;
         mats[0] = grey;
         mats[2] = grey;
         mats[3] = red;
         lights.materials = mats;
         board_rend.sharedMaterial = red;
-        StopCoroutine(co);
-        co = StartCoroutine(StartCountdown(15));
+
+        //StopCoroutine(co);
+        //co = StartCoroutine(StartCountdown(15));
     }
 
     public void turnYellow()
     {
+        total.SetActive(false);
         Material[] mats = lights.materials;
         mats[0] = grey;
         mats[2] = yellow;
         mats[3] = grey;
         lights.materials = mats;
         board_rend.sharedMaterial = yellow;
-        StopCoroutine(co);
-        co = StartCoroutine(StartCountdown(2));
+        //StopCoroutine(co);
+        //co = StartCoroutine(StartCountdown(2));
     }
     
 }
