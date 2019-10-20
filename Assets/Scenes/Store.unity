@@ -149,6 +149,18 @@ MonoBehaviour:
   speed: 2
   handType: 0
   isMoving: 0
+--- !u!82 &818797635 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 2513158751298747435, guid: a915bf9bba9b579418e8415e29cb618c,
+    type: 3}
+  m_PrefabInstance: {fileID: 661394420835716701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &971119068 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5483033371334505876, guid: a915bf9bba9b579418e8415e29cb618c,
+    type: 3}
+  m_PrefabInstance: {fileID: 661394420835716701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1011102962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -211,11 +223,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc06161b6d97feb419f45f03b62e14b9, type: 3}
+--- !u!1 &1094963701 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5483033372060030944, guid: a915bf9bba9b579418e8415e29cb618c,
+    type: 3}
+  m_PrefabInstance: {fileID: 661394420835716701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1137189638 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 107946, guid: dc06161b6d97feb419f45f03b62e14b9,
     type: 3}
   m_PrefabInstance: {fileID: 1011102962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2139334233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1822880471922267729, guid: a915bf9bba9b579418e8415e29cb618c,
+    type: 3}
+  m_PrefabInstance: {fileID: 661394420835716701}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &661394420835716701
 PrefabInstance:
@@ -282,6 +306,56 @@ PrefabInstance:
     - target: {fileID: 9029654816989752549, guid: a915bf9bba9b579418e8415e29cb618c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227257621521319152, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2227257621521319152, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: Robot
+      value: 
+      objectReference: {fileID: 818797635}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: BananaClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce3eac24edbfbc949bbf87438d3882ec, type: 3}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: AppleClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 924b2b758e3e23446b27d093f610a83a, type: 3}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: OrangeClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2db1a610c25581a469f472d934409bf1, type: 3}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: Apple
+      value: 
+      objectReference: {fileID: 2139334233}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: Orange
+      value: 
+      objectReference: {fileID: 1094963701}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: Banana
+      value: 
+      objectReference: {fileID: 971119068}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: WheelChair
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
