@@ -410,7 +410,7 @@ PrefabInstance:
         type: 3}
       propertyPath: call
       value: 
-      objectReference: {fileID: 8300000, guid: 5ab4cb2c924098b45af0fc67a42f75a8, type: 3}
+      objectReference: {fileID: 8300000, guid: 08381e47eaf5e2c41a7fae59bc26dd78, type: 3}
     - target: {fileID: 6437722082081651584, guid: e897fbb04f3590d4c921087f1c0e8841,
         type: 3}
       propertyPath: ring
