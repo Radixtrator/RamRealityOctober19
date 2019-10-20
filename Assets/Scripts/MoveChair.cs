@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 using Valve.VR;
+using System;
 
 public class MoveChair : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class MoveChair : MonoBehaviour
     public float speed;
     public SteamVR_Input_Sources handType;
     public bool isMoving = false;
+    public bool onRamp = false;
 
     private void OnEnable()
     {
@@ -83,16 +85,7 @@ public class MoveChair : MonoBehaviour
       
         
     } */
-    void OnCollisionEnter(Collision collision)
-    {
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
-        }
-        if (collision.gameObject.tag == "ramp") {
-            Debug.Log("Hit Ramp");
-        }
-    }
+   
 
 
     public void Move(bool forward)
@@ -105,15 +98,27 @@ public class MoveChair : MonoBehaviour
     }
     private  IEnumerator DoMoveF()
     {
-        Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime*speed;
-        player.transform.Translate(velocity, Space.World);
-        chair.transform.Translate(velocity, Space.World);
+        if (!onRamp)
+        {
+            Debug.Log("under");
+            Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime * speed;
+            player.transform.Translate(velocity, Space.World);
+            chair.transform.Translate(velocity, Space.World);
+        }
+        else
+        {
+            Debug.Log("Over");
+            Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, (float)(Math.Tan(10* (Math.PI / 180))* this.GetComponent<Transform>().forward.x), this.GetComponent<Transform>().forward.z) * Time.deltaTime * speed;
+            player.transform.Translate(velocity, Space.World);
+            chair.transform.Translate(velocity, Space.World);
+        }
         // player.position += velocity;
         yield return new WaitForSeconds(0.0f);
     }
     private IEnumerator DoMoveB()
     {
         Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime * -speed;
+ 
         player.transform.Translate(velocity, Space.World);
         // player.position += velocity;
         yield return new WaitForSeconds(0.0f);
