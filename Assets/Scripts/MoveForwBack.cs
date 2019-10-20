@@ -10,6 +10,7 @@ public class MoveForwBack : MonoBehaviour
     public SteamVR_Action_Boolean MoveB;
     public Hand hand;
     public GameObject player;
+    //public GameObject chair;
     public IEnumerator coroutine;
     public float speed;
     public SteamVR_Input_Sources handType;
@@ -94,6 +95,7 @@ public class MoveForwBack : MonoBehaviour
     {
         Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, 0, this.GetComponent<Transform>().forward.z) * Time.deltaTime*speed;
         player.transform.Translate(velocity, Space.World);
+        //chair.transform.Translate(velocity, Space.World);
         // player.position += velocity;
         yield return new WaitForSeconds(0.0f);
     }

@@ -13,7 +13,7 @@ namespace Valve.VR.InteractionSystem
         public float snapAngle = 90.0f;
 
         public bool showTurnAnimation = true;
-
+        public GameObject chair;
         public AudioSource snapTurnSource;
         public AudioClip rotateSound;
 
@@ -131,6 +131,12 @@ namespace Valve.VR.InteractionSystem
             player.transform.Rotate(Vector3.up, angle);
             playerFeetOffset = Quaternion.Euler(0.0f, angle, 0.0f) * playerFeetOffset;
             player.trackingOriginTransform.position += playerFeetOffset;
+
+            chair.transform.position -= playerFeetOffset;
+            chair.transform.Rotate(Vector3.up, angle);
+            playerFeetOffset = Quaternion.Euler(0.0f, angle, 0.0f) * playerFeetOffset;
+            chair.transform.position += player.transform.position;
+
 
             GameObject fx = angle > 0 ? rotateRightFX : rotateLeftFX;
 
