@@ -108,7 +108,7 @@ public class MoveChair : MonoBehaviour
         else
         {
             Debug.Log("Over");
-            Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, (float)(Math.Tan(10* (Math.PI / 180))* this.GetComponent<Transform>().forward.x), this.GetComponent<Transform>().forward.z) * Time.deltaTime * speed;
+            Vector3 velocity = new Vector3(this.GetComponent<Transform>().forward.x, (float)(this.GetComponent<Transform>().forward.z)*.1f, this.GetComponent<Transform>().forward.z) * Time.deltaTime * speed;
             player.transform.Translate(velocity, Space.World);
             chair.transform.Translate(velocity, Space.World);
         }
