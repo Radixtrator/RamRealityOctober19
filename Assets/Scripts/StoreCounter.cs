@@ -16,14 +16,16 @@ public class StoreCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (items == 3)
-            Debug.Log("GJ You win");
+        
     }
     void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "store")
         {
             items++;
+            if (items == 3)
+                Sa.PlayFinished();
+
             Destroy(collision.gameObject);
             Debug.Log(collision);
         }

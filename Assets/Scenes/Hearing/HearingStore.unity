@@ -516,6 +516,11 @@ PrefabInstance:
       propertyPath: Robot
       value: 
       objectReference: {fileID: 661394420835716703}
+    - target: {fileID: 321777116210036922, guid: a915bf9bba9b579418e8415e29cb618c,
+        type: 3}
+      propertyPath: finished
+      value: 
+      objectReference: {fileID: 8300000, guid: bd5fa832d7e823e4986ab66321812b9c, type: 3}
     m_RemovedComponents:
     - {fileID: 661394421551932697, guid: a915bf9bba9b579418e8415e29cb618c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a915bf9bba9b579418e8415e29cb618c, type: 3}

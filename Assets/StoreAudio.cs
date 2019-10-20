@@ -9,7 +9,8 @@ public class StoreAudio : MonoBehaviour
     public AudioClip AppleClip;
     public AudioClip GreatingClip;
     public AudioSource Robot;
-
+    public AudioClip finished;
+    public int counter;
     // Update is called once per frame
     void Update()
     {
@@ -17,22 +18,42 @@ public class StoreAudio : MonoBehaviour
         {
             Robot.clip = GreatingClip;
             Robot.Play();
-            Debug.Log("Here");
+            Debug.Log("Here");  
         }
     }
     public void PlayApple()
     {
-        Robot.clip = AppleClip;
-        Robot.Play();
+        if (counter != 2)
+        {
+            Robot.clip = AppleClip;
+            Robot.Play();
+            counter++;
+        }
+    }
+
+    public void PlayFinished()
+    { if (counter != 2)
+        {
+            Robot.clip = finished;
+            Robot.Play();
+            counter++;
+        }
     }
     public void PlayOrange()
     {
-        Robot.clip = OrangeClip;
-        Robot.Play();
+        if (counter != 2)
+        {
+            Robot.clip = OrangeClip;
+            Robot.Play();
+        }
     }
     public void PlayBanana()
     {
-        Robot.clip = BananaClip;
-        Robot.Play();
+        if (counter != 2)
+        {
+            counter++;
+            Robot.clip = BananaClip;
+            Robot.Play();
+        }
     }
 }

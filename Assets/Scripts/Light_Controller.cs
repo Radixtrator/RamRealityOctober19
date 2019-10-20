@@ -11,6 +11,7 @@ public class Light_Controller : MonoBehaviour
     public Material yellow;
     public Material green;
     public Material grey;
+    public int timeGreen;
 
     // public GameObject player_obj;
     // private Transform player;
@@ -76,7 +77,7 @@ public class Light_Controller : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(7);
+            yield return new WaitForSeconds(timeGreen);
             turnYellow();
             yield return new WaitForSeconds(2);
             turnRed();
