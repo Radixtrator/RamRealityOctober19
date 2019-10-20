@@ -21,10 +21,10 @@ public class FollowCamera : MonoBehaviour
         {
             Debug.Log("here");
             tripleOffset = new Vector3(player.transform.position.x - offset2, gameObject.transform.position.y, player.transform.position.z - offset) - new Vector3(camera.transform.position.x - offset, 0f, camera.transform.position.z);
-            gameObject.transform.position = tripleOffset;
+            gameObject.transform.position = new Vector3(player.transform.position.x - offset2, gameObject.transform.position.y, player.transform.position.z - offset) + tripleOffset;
         }
         //gameObject.transform.position = tripleOffset;
         // gameObject.transform.position = new Vector3(player.transform.position.x, gameObject.transform.position.y, player.transform.position.y);
-        //gameObject.transform.rotation = (player.transform.rotation);
+        gameObject.transform.rotation = (player.transform.rotation);
     }
 }

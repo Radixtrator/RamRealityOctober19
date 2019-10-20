@@ -125,18 +125,18 @@ namespace Valve.VR.InteractionSystem
             }
 
             yield return new WaitForSeconds(fadeTime);
-
+            Vector3 start = player.transform.position;
             Vector3 playerFeetOffset = player.trackingOriginTransform.position - player.feetPositionGuess;
             player.trackingOriginTransform.position -= playerFeetOffset;
             player.transform.Rotate(Vector3.up, angle);
             playerFeetOffset = Quaternion.Euler(0.0f, angle, 0.0f) * playerFeetOffset;
             player.trackingOriginTransform.position += playerFeetOffset;
-
-            chair.transform.position -= playerFeetOffset;
+            chair.transform.position += player.transform.position - start;
+            /*chair.transform.position -= playerFeetOffset;
             chair.transform.Rotate(Vector3.up, angle);
             playerFeetOffset = Quaternion.Euler(0.0f, angle, 0.0f) * playerFeetOffset;
-            chair.transform.position += player.transform.position;
-
+            chair.transform.position += playerFeetOffset;
+            */
 
             GameObject fx = angle > 0 ? rotateRightFX : rotateLeftFX;
 
