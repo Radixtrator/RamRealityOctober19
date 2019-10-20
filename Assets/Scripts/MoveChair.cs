@@ -93,7 +93,7 @@ public class MoveChair : MonoBehaviour
             Debug.Log("Hit Ramp");
         }
     }
-}
+
 
     public void Move(bool forward)
     {
@@ -118,4 +118,4 @@ public class MoveChair : MonoBehaviour
         // player.position += velocity;
         yield return new WaitForSeconds(0.0f);
     }
-}}
+}
